@@ -1,0 +1,17 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\script\ObjectsScenes.cs">
+    <Files>
+      <File FileName="Assets\script\ObjectsScenes.cs" Line="41" Column="29" />
+      <File FileName="Assets\script\ChoiceLocation.cs" Line="1" Column="1" />
+      <File FileName="Assets\script\parameterPlayer.cs" Line="1" Column="1" />
+      <File FileName="Assets\script\rotation_projector.cs" Line="1" Column="1" />
+      <File FileName="Assets\script\UIActiv.cs" Line="1" Column="1" />
+      <File FileName="Assets\script\UseUI.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

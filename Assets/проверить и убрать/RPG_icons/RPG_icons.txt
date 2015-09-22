@@ -1,0 +1,31 @@
+RPG ICONS
+---------
+
+A collection of icons and buttons for use in a standard Fantasy RPG style game.
+
+contents:
+
+8	Character class (128*128 pixels)
+
+12	Male character portraits (128*128 pixels) Generic Human/Elf/Halfling/Dwarf
+
+12	Female character portraits (128*128 pixels) Generic Human/Elf/Halfling/Dwarf
+
+200 	Item icons (96*96 pixels) Weapons, armour, keys, jewellery, torches, coins etc
+
+35 	Skill icons (114*114 pixels) non-magic skills, weapon proficiency, special attacks, luck, charm, mapping etc.
+	(also contains pressed and disabled states versions) 
+
+21	Spell icons (114*114 pixels) magic attacks, healing, light cast, etc
+	(also contains pressed and disabled states versions) 
+
+86 	Assorted GUI buttons (114*114 pixels) navigation buttons, equipment slots, inspect, throw, drop, pick up etc.
+
+
+All in PNG format.
+
+If you have any questions about using this pack, please send it to me. My mail is 
+retrofilms2004@yahoo.co.uk 
+
+
+
