@@ -3,19 +3,20 @@ using System.Collections;
 
 public class PlayerAttack : MonoBehaviour {
     public bool attack; // юнит атакует
-    public GameObject enemy;
-    public PlayerStats PS;
+    public GameObject target; // цель атаки
     public int attackDamege; // Урон
     public float AttackSpead; // скорость атаки
     public float Timer;
 
+    public SpawnUnit SU;
+
     public GameObject shell; //снаряд
     public Transform StartPos; //позиция появления снаряда
 
-    void Awake()
+    void Start()
     {
-        enemy = GameObject.FindGameObjectWithTag("Player");
-        PS = enemy.GetComponent<PlayerStats>();
+     //   SU = GameObject.Find("StartBattle").GetComponent<SpawnUnit>();
+      //  target = SU.AttackUnit[1];
     }
 
 
@@ -36,7 +37,8 @@ public class PlayerAttack : MonoBehaviour {
     {
         Timer = 0;
         GameObject bul = (GameObject)Instantiate(shell, StartPos.transform.position, transform.rotation);
-        bul.GetComponent<Shell>().target = enemy.transform;
+        bul.GetComponent<Shell>().target = target.transform;
         bul.GetComponent<Shell>().damege = attackDamege;
+        bul.GetComponent<Shell>().targetAttack = target;
     }
 }

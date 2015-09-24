@@ -3,17 +3,17 @@ using System.Collections;
 
 public class Shell : MonoBehaviour
 {
-    public GameObject player;
+    public GameObject targetAttack; // цель атаки. Передается из player/enemyAttack
     public Transform target;
     public int damege; //урон от взрыва
     public int moveSpeed = 1; // скорость снаряда
 
-    PlayerStats PlayerHp;
+    PlayerStats HpPlayer; // нр игрока
+    EnemyHP HpEnemy; // нр врага
 
-    void Awake()
+    void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
-        PlayerHp = player.GetComponent<PlayerStats>();
+  
     } 
 
     void Update ()
@@ -27,8 +27,18 @@ public class Shell : MonoBehaviour
             }
             else
             {
-                Destroy(gameObject);
-                PlayerHp.TakeDamage(damege);
+                if (target.tag == "Player")
+                {
+                    HpPlayer = target.GetComponent<PlayerStats>();
+                    Destroy(gameObject);
+                    HpPlayer.TakeDamage(damege);
+                }
+                else
+                {
+                    HpEnemy = target.GetComponent<EnemyHP>();
+                    Destroy(gameObject);
+                    HpEnemy.TakeDamage(damege);
+                }
             }
         }
 	}

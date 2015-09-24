@@ -21,7 +21,7 @@ public class EnemyHP : MonoBehaviour
 
     }
 
-    void TakeDamage(int amount)
+    public void TakeDamage(int amount)
     {
         if (CurHp > 0)
         {

@@ -34,5 +34,6 @@ public class EnemyAttack : MonoBehaviour {
         GameObject bul = (GameObject)Instantiate(shell, StartPos.transform.position, transform.rotation);
         bul.GetComponent<Shell>().target = player.transform;
         bul.GetComponent<Shell>().damege = attackDamege;
+        bul.GetComponent<Shell>().targetAttack = player;
     }
 }
