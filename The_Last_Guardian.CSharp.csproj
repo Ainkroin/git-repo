@@ -51,17 +51,11 @@
     <Reference Include="UnityEngine">
       <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Advertisements">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Advertisements.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Networking">
       <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Analytics">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
@@ -87,6 +81,8 @@
     <Compile Include="Assets\script\Player\PlayerStats.cs" />
     <Compile Include="Assets\script\Shell.cs" />
     <Compile Include="Assets\script\SpawnUnit.cs" />
+    <Compile Include="Assets\script\TargetSelection.cs" />
+    <Compile Include="Assets\script\rotation_projector.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Resources\Image\unit\player\Hard Surface Free\HardSurface Shaders\HardSurface Free Cut Out Specular.shader" />
@@ -189,6 +185,7 @@
     <None Include="Assets\Standard Assets\Vehicles\Car\Shaders\ReflectiveDiffuseSpec.shader" />
     <None Include="Assets\Standard Assets\Vehicles\Car\Shaders\ReflectiveDiffuseSpecTransp.shader" />
     <None Include="Assets\проверить и убрать\RPG_icons\RPG_icons.txt" />
+    <None Include="Assets\проверить и убрать\cgcpu_01\readme.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>

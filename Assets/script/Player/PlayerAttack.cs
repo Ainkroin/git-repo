@@ -15,8 +15,8 @@ public class PlayerAttack : MonoBehaviour {
 
     void Start()
     {
-     //   SU = GameObject.Find("StartBattle").GetComponent<SpawnUnit>();
-      //  target = SU.AttackUnit[1];
+        SU = GameObject.Find("StartBattle").GetComponent<SpawnUnit>();
+        target = SU.AttackUnit[0];
     }
 
 
