@@ -8,7 +8,7 @@ public class SpawnUnit : MonoBehaviour
     public GameObject[] PosUnit = new GameObject[3]; // позиция юнита
 
     public GameObject spawnUnit; // юнит который появляется
-    
+   
 	void Start ()
     {
         Spawn();
@@ -17,7 +17,6 @@ public class SpawnUnit : MonoBehaviour
 
 	void Update ()
     {
-	
 	}
 
     void Spawn()

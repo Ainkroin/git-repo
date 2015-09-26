@@ -8,8 +8,13 @@ public class EnemyHP : MonoBehaviour
     public int MaxHp; // максимальное здоровье
     public int CurHp; // текущее здоровье
 
+    public EnemyAttack EA;
+    public SpawnUnit SU;
+
     void Start()
     {
+        SU = GameObject.Find("StartBattle").GetComponent<SpawnUnit>();
+        EA = this.gameObject.GetComponent<EnemyAttack>();
         CurHp = MaxHp;
         anim = GetComponent<Animator>();
     }
@@ -17,8 +22,6 @@ public class EnemyHP : MonoBehaviour
 
     void Update()
     {
-
-
     }
 
     public void TakeDamage(int amount)
@@ -35,6 +38,8 @@ public class EnemyHP : MonoBehaviour
 
     void Dead()
     {
+        EA.attack = false;
         anim.SetTrigger("IsDead");
+        Destroy(gameObject);
     }
 }

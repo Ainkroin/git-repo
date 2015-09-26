@@ -41,5 +41,9 @@ public class Shell : MonoBehaviour
                 }
             }
         }
+        if (target == null)
+        {
+            Destroy(gameObject);
+        }
 	}
 }

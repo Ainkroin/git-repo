@@ -74,7 +74,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Animation\Magic Pack\Demo\CameraScroll.cs" />
     <Compile Include="Assets\script\Enemy\EnemyAttack.cs" />
     <Compile Include="Assets\script\Enemy\EnemyHP.cs" />
     <Compile Include="Assets\script\Player\PlayerAttack.cs" />
@@ -85,8 +84,8 @@
     <Compile Include="Assets\script\rotation_projector.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Resources\Image\unit\player\Hard Surface Free\HardSurface Shaders\HardSurface Free Cut Out Specular.shader" />
-    <None Include="Assets\Resources\Image\unit\player\Hard Surface Free\HardSurface Shaders\HardSurfacePro Hidden Front Cut Out Specular.shader" />
+    <None Include="Assets\Resources\Prefab\unit\player\Hard Surface Free\HardSurface Shaders\HardSurface Free Cut Out Specular.shader" />
+    <None Include="Assets\Resources\Prefab\unit\player\Hard Surface Free\HardSurface Shaders\HardSurfacePro Hidden Front Cut Out Specular.shader" />
     <None Include="Assets\Standard Assets\Cameras\CameraGuidelines.txt" />
     <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
     <None Include="Assets\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />

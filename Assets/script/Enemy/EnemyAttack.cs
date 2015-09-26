@@ -22,18 +22,21 @@ public class EnemyAttack : MonoBehaviour {
             Timer += Time.deltaTime;
             if (Timer >= AttackSpead)
             {
-                Attack();
+               // Attack();
             }
         }
 	
 	}
 
-    void Attack()
+    public void Attack()
     {
-        Timer = 0;
-        GameObject bul = (GameObject)Instantiate(shell, StartPos.transform.position, transform.rotation);
-        bul.GetComponent<Shell>().target = player.transform;
-        bul.GetComponent<Shell>().damege = attackDamege;
-        bul.GetComponent<Shell>().targetAttack = player;
+        if (player.GetComponent<PlayerStats>().CurHp > 0)
+        {
+            Timer = 0;
+            GameObject bul = (GameObject)Instantiate(shell, StartPos.transform.position, transform.rotation);
+            bul.GetComponent<Shell>().target = player.transform;
+            bul.GetComponent<Shell>().damege = attackDamege;
+            bul.GetComponent<Shell>().targetAttack = player;
+        }
     }
 }
