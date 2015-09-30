@@ -81,6 +81,7 @@
     <Compile Include="Assets\script\Shell.cs" />
     <Compile Include="Assets\script\SpawnUnit.cs" />
     <Compile Include="Assets\script\TargetSelection.cs" />
+    <Compile Include="Assets\script\UI\ShildButton.cs" />
     <Compile Include="Assets\script\rotation_projector.cs" />
   </ItemGroup>
   <ItemGroup>

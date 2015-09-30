@@ -7,7 +7,7 @@ public class PlayerAttack : MonoBehaviour
     public bool redoublement; // повторная атака
     public bool attack; // юнит атакует
     public GameObject target; // цель атаки
-    public int attackDamege; // Урон
+    public float attackDamege; // Урон
     public float AttackSpead; // скорость атаки
     public float Timer;
 

@@ -5,7 +5,7 @@ public class Shell : MonoBehaviour
 {
     public GameObject targetAttack; // цель атаки. Передается из player/enemyAttack
     public Transform target;
-    public int damege; //урон от взрыва
+    public float damege; //урон от взрыва
     public int moveSpeed = 1; // скорость снаряда
 
     PlayerStats HpPlayer; // нр игрока

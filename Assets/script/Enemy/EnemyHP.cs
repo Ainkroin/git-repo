@@ -24,11 +24,11 @@ public class EnemyHP : MonoBehaviour
     {
     }
 
-    public void TakeDamage(int amount)
+    public void TakeDamage(float amount)
     {
         if (CurHp > 0)
         {
-            CurHp -= amount;
+            CurHp -= (int)amount;
         }
         if (CurHp <= 0)
         {
