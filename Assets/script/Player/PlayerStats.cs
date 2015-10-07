@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class PlayerStats : MonoBehaviour
@@ -12,6 +13,12 @@ public class PlayerStats : MonoBehaviour
     public int MaxRage; // максимальная ярость
     public int CurRage; // текущая ярость
     public float ShildProtection; // модификатор защиты
+
+    public Slider Rage; // бар ярости
+    public Slider Concentration; // бар концентрации
+
+    public Text RageText; // счетчик ярости
+    public Text ConcentrationText; // счетчик концентрации
 
     public bool ShildActiv; // Щит активен
 
@@ -33,8 +40,15 @@ public class PlayerStats : MonoBehaviour
     {
         if (ShildActiv)
         {
-            ActivationShield();
+            ActivationShield();      
         }
+        if (!ShildActiv)
+        {
+            RegenShild();
+        }
+
+        Concentration.value = CurConcentration / MaxConcentration * 100;
+        ConcentrationText.text = ((int)CurConcentration).ToString();
     }
 
     public void TakeDamage(float amount)
@@ -78,8 +92,22 @@ public class PlayerStats : MonoBehaviour
             PA.attack = true;
             ShildActiv = false;
             anim.SetBool("shield", false);
-        } 
-        
+        }     
+
+    }
+
+    // Регенерация щита
+    void RegenShild()
+    {
+        if (CurConcentration < MaxConcentration)
+        {
+            CurConcentration = CurConcentration + 5.0f * Time.deltaTime;
+        }
+        else
+        { 
+            CurConcentration = MaxConcentration;
+        }
+
     }
 
 }
