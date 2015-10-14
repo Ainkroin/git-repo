@@ -76,17 +76,29 @@
   <ItemGroup>
     <Compile Include="Assets\script\Enemy\EnemyAttack.cs" />
     <Compile Include="Assets\script\Enemy\EnemyHP.cs" />
+    <Compile Include="Assets\script\MoveCamera.cs" />
     <Compile Include="Assets\script\Player\PlayerAttack.cs" />
     <Compile Include="Assets\script\Player\PlayerStats.cs" />
     <Compile Include="Assets\script\Shell.cs" />
     <Compile Include="Assets\script\SpawnUnit.cs" />
     <Compile Include="Assets\script\TargetSelection.cs" />
     <Compile Include="Assets\script\UI\ShildButton.cs" />
-    <Compile Include="Assets\script\rotation_projector.cs" />
+    <Compile Include="Assets\script\map\ChoiceLocation.cs" />
+    <Compile Include="Assets\script\map\LoadLvlMap.cs" />
+    <Compile Include="Assets\script\map\ObjectsScenes.cs" />
+    <Compile Include="Assets\script\map\UIActiv.cs" />
+    <Compile Include="Assets\script\map\UseUI.cs" />
+    <Compile Include="Assets\script\map\parameterPlayer.cs" />
+    <Compile Include="Assets\script\map\rotation_projector.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Resources\Prefab\unit\player\Hard Surface Free\HardSurface Shaders\HardSurface Free Cut Out Specular.shader" />
     <None Include="Assets\Resources\Prefab\unit\player\Hard Surface Free\HardSurface Shaders\HardSurfacePro Hidden Front Cut Out Specular.shader" />
+    <None Include="Assets\Resources\Text\text1.txt" />
+    <None Include="Assets\Resources\xml\EmemyGroups.xml" />
+    <None Include="Assets\Resources\xml\InfoLocation.xml" />
+    <None Include="Assets\Resources\xml\Unit.xml" />
+    <None Include="Assets\Resources\xml\UnlockLVL.xml" />
     <None Include="Assets\Standard Assets\Cameras\CameraGuidelines.txt" />
     <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
     <None Include="Assets\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />

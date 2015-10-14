@@ -132,6 +132,11 @@
   <ItemGroup>
     <None Include="Assets\Resources\Prefab\unit\player\Hard Surface Free\HardSurface Shaders\HardSurface Free Cut Out Specular.shader" />
     <None Include="Assets\Resources\Prefab\unit\player\Hard Surface Free\HardSurface Shaders\HardSurfacePro Hidden Front Cut Out Specular.shader" />
+    <None Include="Assets\Resources\Text\text1.txt" />
+    <None Include="Assets\Resources\xml\EmemyGroups.xml" />
+    <None Include="Assets\Resources\xml\InfoLocation.xml" />
+    <None Include="Assets\Resources\xml\Unit.xml" />
+    <None Include="Assets\Resources\xml\UnlockLVL.xml" />
     <None Include="Assets\Standard Assets\Cameras\CameraGuidelines.txt" />
     <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
     <None Include="Assets\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
